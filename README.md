@@ -35,3 +35,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 혹은 
 
 py -m django --version
+
+장고 기본 디렉토리 설치
+프로젝트 폴더, basic file templates, 그리고 프로젝트 관리 스크립트 (manage.py)를 만들기 위해서 django-admin 을 사용합니다.
+django-admin startproject mysite
+python3 manage.py runserver 
+
+
+다음시간에...
+
+py manage.py startapp catalog
