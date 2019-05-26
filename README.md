@@ -44,4 +44,13 @@ python3 manage.py runserver
 
 다음시간에...
 
-py manage.py startapp catalog
+py manage.py startapp catalog (이름은 아무거나 해도 상관은 없음)
+
+Admin 페이지 작성
+관리자 계정을 생성하기 위해서는 먼저, migrate
+createsuperuser :  admin 페이지에 로그인 하기 위한 정보들을 입력
+
+python manage.py migrate
+python manage.py createsuperuser
+unzena / 숫자(6개기억하기 42*****)
+
