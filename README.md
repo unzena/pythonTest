@@ -54,3 +54,5 @@ python manage.py migrate
 python manage.py createsuperuser
 unzena / 숫자(6개기억하기 42*****)
 
+어플리케이션 실행 manage.py runserver
+
