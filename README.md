@@ -16,3 +16,22 @@ cd \Project1\Scripts
 activate Project1
 
 활성화 종료: deactivate 
+
+장고 설치 하기 
+
+pip 최신버전 업데이트 확인: python -m pip install --upgrade pip
+pip install Django==2.2.1
+
+
+설치확인
+
+(Project1) PS E:\workspace\python\Project1\Scripts> .\python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import django
+>>> print(django.get_version())
+2.2.1
+
+혹은 
+
+py -m django --version
