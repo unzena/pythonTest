@@ -41,12 +41,9 @@ py -m django --version
 django-admin startproject mysite
 python3 manage.py runserver 
 
+py manage.py startapp catalog (이름은 아무거나 해도 상관은 없음) => 일단 만들어 놓고 다음시간에 작성
 
-다음시간에...
-
-py manage.py startapp catalog (이름은 아무거나 해도 상관은 없음)
-
-Admin 페이지 작성
+Admin 페이지 만들기
 관리자 계정을 생성하기 위해서는 먼저, migrate
 createsuperuser :  admin 페이지에 로그인 하기 위한 정보들을 입력
 
