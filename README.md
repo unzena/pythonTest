@@ -39,7 +39,7 @@ py -m django --version
 장고 기본 디렉토리 설치
 프로젝트 폴더, basic file templates, 그리고 프로젝트 관리 스크립트 (manage.py)를 만들기 위해서 django-admin 을 사용합니다.
 django-admin startproject mysite
-python3 manage.py runserver 
+py manage.py runserver 
 
 py manage.py startapp catalog (이름은 아무거나 해도 상관은 없음) => 일단 만들어 놓고 다음시간에 작성
 
