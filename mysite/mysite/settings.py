@@ -26,7 +26,7 @@ SECRET_KEY = '0*y2#*w=usa6y%godeae1)*j6s!(yfz6o43^alo**t#n&2!j7+'
 DEBUG = True
 
 #defalut ['localhost', '127.0.0.1', '[::1]']에 대해서 유효
-ALLOWED_HOSTS = ['127.0.0.1', '..pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
