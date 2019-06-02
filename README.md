@@ -71,3 +71,13 @@ admin.site.register(Post)
 
 배포
 - www.pythonanywhere.com
+- clone => bash 선택 후 =>  git clone https://github.com/unzena/pythonTest.git
+- tree pythonTest
+- PythonAnywhere에서 가상환경(virtualenv) 생성하기
+- cd pythonTest/
+- virtualenv --python=python3.7 project1
+- source project1/bin/activate
+- pip install django~=2.2
+- database 생성
+- cd mysite
+- python manage.py migrate
