@@ -62,12 +62,12 @@ catalog app 만들기
 - py manage.py migrate blog (데이터베이스에 추가)
 - blog/admin.py 작성
 
-'''
+```
 from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-'''
+```
 
 배포
 - www.pythonanywhere.com
@@ -91,7 +91,7 @@ web app으로 블로그 배포하기
 WSGI 파일 설정
 - code 탭에 var/www/<your-username>_pythonanywhere_com_wsgi.py 부분 클릭
 - 아래 소스 복사 후 붙여 넣기
-'''
+```
 import os
 import sys
 
@@ -104,7 +104,7 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 from django.core.wsgi import get_wsgi_application
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
-'''
+```
 - 저장(Save)을 누르고 웹(Web) 탭
 - reload 클릭 
 - 배포 완료 unzena.pythonanywhere.com 
