@@ -80,4 +80,31 @@ admin.site.register(Post)
 - pip install django~=2.2
 - database 생성
 - cd mysite
+- .sqlite3 가 설정되었을 경우 먼저 삭제 후 migrate 
 - python manage.py migrate
+- python manage.py createsuperuser
+
+web app으로 블로그 배포하기
+- Web 대시보드 =>  Add a new web app => manual configuration => Python 3.7을 선택하고 다음(Next)을 클릭
+- Virtualenv => /home/unzena/pythonTest/project1 저장
+
+WSGI 파일 설정
+- code 탭에 var/www/<your-username>_pythonanywhere_com_wsgi.py 부분 클릭
+- 아래 소스 복사 후 붙여 넣기
+'''
+import os
+import sys
+
+path = '/home/unzena/pythonTest/mysite'  # PythonAnywhere 계정으로 바꾸세요.
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
+'''
+- 저장(Save)을 누르고 웹(Web) 탭
+- reload 클릭 
+- 배포 완료 unzena.pythonanywhere.com 
