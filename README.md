@@ -52,3 +52,22 @@ Admin 페이지 만들기
 - unzena / 숫자(6개기억하기 42*****)
 
 - 어플리케이션 실행 py manage.py runserver
+
+catalog app 만들기
+- py manage.py startapp blog
+- setings.py에 blog app 작성 (어플리케이션 사용하겠다 등록 하는 작업)
+- models.py 작성 
+  -- (모델정의 https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types 참고)
+- py manage.py makemigrations blog (장고에게 모델에 변경이 있었다는 것을 알려주는 것)
+- py manage.py migrate blog (데이터베이스에 추가)
+- blog/admin.py 작성
+
+'''
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+'''
+
+배포
+- www.pythonanywhere.com
