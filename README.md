@@ -13,7 +13,7 @@ python 설치 후 vscode python 및  python for vscode 설치
 pip install virtualenv
 virtualenv Project1
 cd \Project1\Scripts
-activate Project1
+.\activate
 
 활성화 종료: deactivate 
 
@@ -47,9 +47,9 @@ Admin 페이지 만들기
 관리자 계정을 생성하기 위해서는 먼저, migrate
 createsuperuser :  admin 페이지에 로그인 하기 위한 정보들을 입력
 
-python manage.py migrate
-python manage.py createsuperuser
+py manage.py migrate
+py manage.py createsuperuser
 unzena / 숫자(6개기억하기 42*****)
 
-어플리케이션 실행 manage.py runserver
+어플리케이션 실행 py manage.py runserver
 

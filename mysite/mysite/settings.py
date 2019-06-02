@@ -25,7 +25,8 @@ SECRET_KEY = '0*y2#*w=usa6y%godeae1)*j6s!(yfz6o43^alo**t#n&2!j7+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#defalut ['localhost', '127.0.0.1', '[::1]']에 대해서 유효
+ALLOWED_HOSTS = ['127.0.0.1', '.pythontest.com']
 
 
 # Application definition
@@ -107,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -120,5 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #시작 명령어 py manage.py runserver
